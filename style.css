@@ -49,4 +49,40 @@ a{  color: #e5e7eb;
     font-weight: bolder;
     color:#1f2937 ;
 }
+.box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid #3882f6;
+    border-radius: 8px;
+}
+.subtext{
+    font-size: 15px;
+    color: gray;
+}
+/*Section 3*/
+.section-3{
+    background-color: #e5e7eb;
+}
+.qoute{
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+}
+.name{
+    font-size: 20px;
+    font-weight: bold;
 
+}
+/*section 4*/
+.major{
+    background-color: #3882f6;
+    color: white;
+}
+.click{
+    border: 2px solid white;
+}
+/*footer*/
+.footer{
+    background-color: #1f2937;
+    color: white;
+}
