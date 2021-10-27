@@ -1,10 +1,15 @@
 /* Css without flex */
+html, body, .main{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
 /*Header*/
 .header{
     background-color: #1F2937;
 }
 .logo{
- font-size: 24px;
+ font-size: 20px;
  color: #F9FAf8;
  font-weight: bold;
 }
@@ -16,7 +21,7 @@ ul{
     margin: 0px;
 }
 a{  color: #e5e7eb;
-    font-size: 18px;
+    font-size: 12px;
     text-decoration: none;
 }
 /*section 1*/
@@ -24,13 +29,16 @@ a{  color: #e5e7eb;
     background-color: #1F2937;
 }
 .info1{
-    font-size: 48px;
+    font-size: 28px;
     color: #F9FAf8;
     font-weight: bolder;
+    margin-bottom: 15px;
+    
 }
 .info2,.plhl{
     color: #e5e7eb;
     font-size: 18px;
+    margin-bottom: 15px;
 }
 .signup,.click{
     background-color: #3882f6;
@@ -39,21 +47,24 @@ a{  color: #e5e7eb;
     border-radius: 6px;
     font-size: 18px;
     font-weight: bold;
+    padding: 7px 10px;
 }
 .img{
     background-color: gray;
 }
 /*Section 2*/
 .sc2top{
-    font-size: 36px   ;
+    font-size: 28px   ;
     font-weight: bolder;
     color:#1f2937 ;
+    margin-bottom: 20px;
 }
 .box{
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     border: 2px solid #3882f6;
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 .subtext{
     font-size: 15px;
@@ -64,9 +75,10 @@ a{  color: #e5e7eb;
     background-color: #e5e7eb;
 }
 .qoute{
-    font-size: 36px;
+    font-size: 28px;
     font-style: italic;
     color: #1f2937;
+    font-weight: 0;
 }
 .name{
     font-size: 20px;
@@ -74,9 +86,13 @@ a{  color: #e5e7eb;
 
 }
 /*section 4*/
-.major{
+.src-4{
     background-color: #3882f6;
     color: white;
+}
+.bold{
+    font-weight: bold;
+    font-size: 18px;
 }
 .click{
     border: 2px solid white;
@@ -85,4 +101,111 @@ a{  color: #e5e7eb;
 .footer{
     background-color: #1f2937;
     color: white;
+}
+.section-1,.section-2,.section-3,.section-4{
+    height: 300px;
+}
+.info,.img{
+    width: 400px;
+}
+.src-2,.src-3{
+    width: 700px;
+}
+.src-4{
+    border-radius: 10px;
+    width: 800px;
+}
+.hold{
+   width:  120px;
+}
+
+
+/* Flexing starts here. Time for some fun lol*/
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+ul{
+    display: flex;
+    gap: 18px;
+    
+}
+.section-1{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    
+}
+.src1{
+    display: flex;
+    gap: 70px;
+   
+}
+.info{
+    
+    flex-wrap: nowrap;
+
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-2{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.src-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container{
+    display: flex;
+    gap: 50px;
+    
+   
+}
+.hold{
+    flex-wrap: wrap;
+    text-align: center;
+}
+.section-3{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name{
+    display: flex;
+    justify-content: flex-end;
+}
+.section-4{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.src-4{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
