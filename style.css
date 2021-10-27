@@ -1,0 +1,52 @@
+/* Css without flex */
+/*Header*/
+.header{
+    background-color: #1F2937;
+}
+.logo{
+ font-size: 24px;
+ color: #F9FAf8;
+ font-weight: bold;
+}
+
+ul{
+    
+    list-style-type:none;
+    padding: 0px;
+    margin: 0px;
+}
+a{  color: #e5e7eb;
+    font-size: 18px;
+    text-decoration: none;
+}
+/*section 1*/
+.section-1{
+    background-color: #1F2937;
+}
+.info1{
+    font-size: 48px;
+    color: #F9FAf8;
+    font-weight: bolder;
+}
+.info2,.plhl{
+    color: #e5e7eb;
+    font-size: 18px;
+}
+.signup,.click{
+    background-color: #3882f6;
+    color: #F9FAf8;
+    border: 0px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.img{
+    background-color: gray;
+}
+/*Section 2*/
+.sc2top{
+    font-size: 36px   ;
+    font-weight: bolder;
+    color:#1f2937 ;
+}
+
